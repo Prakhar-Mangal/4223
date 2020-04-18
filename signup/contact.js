@@ -18,6 +18,7 @@ function registerEmployee() {
     email = document.getElementById('email2').value;
     company = document.getElementById('c').value;
     companyRole = document.getElementById('cp').value;
+    contact = document.getElementById('con').value;
     // alert(fname+' '+lname+' '+email)
     document.getElementById('hir').innerHTML=`<div class="loader"></div>`;
     setTimeout(()=>{

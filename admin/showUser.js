@@ -1,11 +1,16 @@
 url = 'https://occupassion.herokuapp.com'
+header = {
+    headers: {
+      api_key : 'VbQDbT3ninCzbfcVnd69' 
+    }
+   }
 
 function showTalentEmployer(){
     // document.getElementById('talent').innerHTML = `<center> <div class="loader"></div> </center>`
     if(!getStorage('admin')){
         logout()
     }   
-    axios.get(`${url}/talent/get`)
+    axios.get(`${url}/talent/get`,header)
     .then(res=>{
         if(res.data.success){
         str=''
@@ -26,7 +31,7 @@ function showTalentEmployer(){
         alert('Try Again')
     })
 
-    axios.get(`${url}/employer/get`)
+    axios.get(`${url}/employer/get`,header)
     .then(res=>{
         if(res.data.success){
         str=''

@@ -215,3 +215,15 @@ background-color: #FF6600
   border-color: #1DA851;
 }
 
+#checkmark{
+  color:rgb(3, 117, 3);
+}
+.container{
+  text-align: center;
+}
+
+.site-header__title{
+  font-weight: bolder;
+  font-size: calc(4vw + 4vh + 2vmin);
+  margin-top: 10%;
+}
